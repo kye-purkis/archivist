@@ -1,0 +1,50 @@
+{
+  "name": "archivist-desktop-spike",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Isolated TT-001 Electron feasibility diagnostic",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "smoke:package": "electron --diagnostic-ui test/package-smoke.cjs",
+    "verify": "npm run typecheck && npm test",
+    "smoke:catalogue:package": "node test/catalogue-package-smoke.cjs"
+  },
+  "dependencies": {
+    "@github/copilot-sdk": "1.0.14",
+    "@shadcn/react": "0.3.1",
+    "better-sqlite3": "12.8.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "cn": "0.4.0",
+    "lucide-react": "1.48.0",
+    "radix-ui": "1.6.7",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "recharts": "2.15.4",
+    "tailwind-merge": "3.7.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "7.10.2",
+    "@electron-forge/maker-zip": "7.10.2",
+    "@electron-forge/plugin-auto-unpack-natives": "7.10.2",
+    "@electron-forge/plugin-vite": "7.10.2",
+    "@electron-forge/shared-types": "7.10.2",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "24.10.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "electron": "41.0.0",
+    "prettier": "3.9.9",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}

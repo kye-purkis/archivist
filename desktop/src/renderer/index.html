@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' http://127.0.0.1:5178; object-src 'none'; base-uri 'none'; frame-src 'none'"
+    />
+    <title>Archivist</title>
+  </head>
+  <body>
+    <div id="root">
+      <main
+        id="startup-fallback"
+        role="status"
+        aria-live="polite"
+        style="
+          font-family: system-ui, sans-serif;
+          padding: 28px;
+          color: #242930;
+          background: #f2f3f4;
+          min-height: 100vh;
+        "
+      >
+        <h1>Starting Archivist…</h1>
+        <p>If this message stays visible, close and reopen the app.</p>
+      </main>
+    </div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>

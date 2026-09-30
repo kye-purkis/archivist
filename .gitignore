@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+docs/initiatives/physical-media-mvp/build/github-import/
+desktop/node_modules
+
+desktop/.vite/
+desktop/out/
+desktop/test/.catalogue-harness/
+desktop/dist/
